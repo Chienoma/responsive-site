@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #373737;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em; }
+
+/* topimage
+------------------------------------------------------------*/
+.top-image {
+  background-image: url("../image/topimage.jpg");
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+@media (min-width: 769px) {
+  .top-image {
+    background-image: url("../image/topimage.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center; } }
+ /* skills
+------------------------------------------------------------*/
+#skills {
+  background-color: #f4f4f4;
+  text-align: center;
+  /* desktop
+  ------------------------------------------------------------*/
+  /* mobile
+  ------------------------------------------------------------*/ }
+  @media (min-width: 769px) {
+    #skills .container {
+      display: -webkit-flex;
+      display: flex;
+      justify-content: space-between; }
+    #skills .skill-box {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-flex: 1;
+      flex: 1;
+      margin: 0px 10px 30px;
+      padding: 20px;
+      border-radius: 4px;
+      background-color: #76323f;
+      color: #f4f4f4; } }
+  #skills 　.container {
+    justify-content: space-between; }
+  #skills .skill-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 0px 10px 30px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #76323f;
+    color: #f4f4f4; }
+  #skills h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 30px;
+    color: #76323f; }
+  #skills h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f4f4f4; }
+
+  /* contact
+------------------------------------------------------------*/
+#contact {
+  background-color: #c0b283;
+  text-align: center;
+  padding: 30px 0 60px 0px; }
+  #contact h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: #f4f4f4; }
+  #contact .btn {
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 15px 60px;
+    margin: 30px;
+    color: #f4f4f4;
+    background-color: #76323f;
+    cursor: pointer; }
+  @media (min-width: 769px) {
+    #contact .btn {
+      box-shadow: 0 7px #52232c; }
+      #contact .btn:active {
+        position: relative;
+        top: 7px;
+        box-shadow: none; } }
+
+/*# sourceMappingURL=style.css.map */

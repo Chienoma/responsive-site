@@ -1,0 +1,150 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+$baseColor: #f4f4f4;
+$subColor: #c0b283;
+$keyColor: #76323f;
+$fontColor: #373737;
+
+/* Base
+------------------------------------------------------------*/
+html{ font-size: 62.5%; }
+
+body{
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family:$baseFontFamily;
+  line-height:1.6;
+  letter-spacing: 0.1em; 
+  }
+
+/* topimage
+------------------------------------------------------------*/
+.top-image{
+  background-image: url("../image/topimage.jpg");
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+   }
+ @media (min-width: 769px){
+     .top-image{
+  background-image: url("../image/topimage.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+   }
+ }
+   
+ /* skills
+------------------------------------------------------------*/
+#skills
+{
+    background-color: $baseColor;
+    text-align: center;
+    
+/* desktop
+------------------------------------------------------------*/    
+@media (min-width: 769px){
+    
+.container{
+    display: -webkit-flex;
+    display:         flex;
+    justify-content: space-between; }
+   
+
+.skill-box
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-flex: 1;
+            flex: 1;
+    margin: 0px 10px 30px;
+    padding: 20px;
+            border-radius: 4px;
+    background-color:$keyColor;
+    color:$baseColor;}
+}
+
+/* mobile
+------------------------------------------------------------*/    
+　.container{
+
+    justify-content: space-between; }
+   
+
+.skill-box
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-flex: 1;
+            flex: 1;
+    margin: 0px 10px 30px;
+    padding: 20px;
+            border-radius: 4px;
+    background-color:$keyColor;
+    color:$baseColor;}
+
+h2
+{
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 30px;
+    color: $keyColor;
+}
+
+h3
+{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: $baseColor;
+}
+ }
+ 
+  /* contact
+------------------------------------------------------------*/
+#contact{
+    
+    background-color:$subColor;
+    text-align: center;
+    padding: 30px 0 60px 0px;
+    
+    h2{
+        font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: $baseColor;
+        
+    }
+
+.btn {
+  font-size: 2rem;
+  font-weight: bold;  
+  border-radius: 4px;
+  padding: 15px 30px;
+  margin: 30px;
+  color:$baseColor;
+  background-color: $keyColor;
+  cursor: pointer;
+  }
+
+@media (min-width: 769px)
+{.btn 
+{box-shadow: 0 7px darken($keyColor,10%);
+&:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+}
+}
+    
+}
